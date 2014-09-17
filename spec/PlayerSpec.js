@@ -13,21 +13,6 @@ describe('User', function() {
   	expect(user.gitHubUsername).toEqual("Jrmcneil") 
   });
 
-  it('can add a GitHubUsername', function(){
-    user.addGitHubUserToken(ENV["GITHUB_TOKEN"])
-    expect(user.gitHubUserToken).toEqual("1860e17c99b5696fe8d9d39f63ddd180d44284ff") 
-  });
-
-  // it('has the correct URL', function(){
-  //   user.addGitHubUsername("Jrmcneil")
-  //   user.a
-  // })
-
-  // it('can show its GitHub followers', function() {
-  //   user.addGitHubUsername("Jrmcneil")
-  //   expect(user.gitHubFollowers).not.toBe(undefined)
-  // });
-
 });
 
 
