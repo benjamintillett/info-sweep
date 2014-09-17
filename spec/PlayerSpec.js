@@ -4,11 +4,15 @@ describe('User', function() {
     user = new User('Ben');
   });
 
-
-
-  it('should have a username', function() {
+  it('can have a name', function() {
     expect(user.name).toEqual('Ben');
     });
+
+  it('can add a GitHubUsername', function(){
+  	user.addGitHubUsername("Jrmcneil")
+  	expect(user.gitHubUsername).toEqual("Jrmcneil") 
+  });
+
 });
 
 
