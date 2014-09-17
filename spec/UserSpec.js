@@ -41,10 +41,16 @@ describe('User', function() {
     user.addGitHubUsername("Jrmcneil")
     expect(user.followers).toEqual(21)
   });
+
   it("assigns the reposirories when username is added",function(){
     user.addGitHubUsername("Jrmcneil")
     expect(user.repos).toEqual(17)
   });
+
+  it('assigns the avatar when the username is added', function(){
+    user.addGitHubUsername("Jrmcneil")
+    expect(user.avatar).toEqual("https://avatars.githubusercontent.com/u/8350153?v=2")
+  })
 
 });
 
