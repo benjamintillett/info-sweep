@@ -10,7 +10,30 @@
 
 
 <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='/mustache.js'></script>
 <script src='/user.js'></script>
 <script src='/interface.js'></script>
+<div id="sampleArea">
+</div>
+<template id="userSection" style="display:none;">
+ <article class="profile">
+    <section class="pic">
+      <img src={{avatar}}>
+    </section>
+
+    <section class="statistics">
+      <h3>
+        <a href="https://github.com/alexmakers">
+          {{login}}
+        </a>
+      </h3>
+      <strong>Repos:{{repos}}</strong>
+      <strong>Followers: {{followers}}</strong>
+    </section>
+    <br clear="all">
+ </article>
+</template>
+
+
 </body>
 </html>
