@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do 
-	"James is great"
+	erb :index
 end 
