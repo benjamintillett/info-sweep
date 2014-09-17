@@ -40,7 +40,10 @@ describe('User', function() {
   it("assigns the followers when username is added",function(){
     user.addGitHubUsername("Jrmcneil")
     expect(user.followers).toEqual(21)
-
+  });
+  it("assigns the reposirories when username is added",function(){
+    user.addGitHubUsername("Jrmcneil")
+    expect(user.repos).toEqual(17)
   });
 
 });
