@@ -20,7 +20,11 @@ User.prototype.getGitHubData = function(callback) {
 		 callback.login(user.login);
 		 callback.repos(user.public_repos)
 		 callback.avatar(user.avatar_url)	
-	})
+	}).fail(function(){
+            alert('Could not find this user.');
+          }).always(function() {
+            $('#username').val('');
+          })
 }
 User.prototype.followers = function(followers) {
 	this.followers = followers;
@@ -31,9 +35,6 @@ User.prototype.repos = function(repos) {
 User.prototype.avatar = function(avatar) {
 	this.avatar = avatar;
 }
-
-
-
 
 User.prototype.login = function(login) {
 	this.login = login;
