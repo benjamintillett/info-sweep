@@ -2,16 +2,12 @@ $(document).ready(function(){
 	$('.userInput').on('submit', function(e){
 		e.preventDefault();
 		user = new User;
-		user.addGitHubUsername($('#username').val(),function(user){
-			console.log(user.showFollowers()) 
-			var template = $('#userSection').html();
-			$('#sampleArea').append(Mustache.render(template,user));
+		
+		user.addGitHubUsername($('#username').val());
+			// var template = $('#userSection').html();
+			// $('#sampleArea').append(Mustache.render(template,user))
+			// console.log(user)
 		});
-			
-		
-		
-		
-	})
 });
 
 
