@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <form class="userInput">
@@ -17,12 +18,11 @@
 <div id="sampleArea">
 </div>
 
-<template id="userSection" style="display:none;">
- <article class="profile">
+<template id="userSection">
+  <article class="profile">
     <section class="pic">
       <img src={{avatar_url}}>
     </section>
-
     <section class="statistics">
       <h3>
         <a href="https://github.com/{{login}}">

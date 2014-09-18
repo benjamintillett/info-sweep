@@ -1,0 +1,23 @@
+article {
+    background:#FFF;
+    border:1px solid #AAA;
+    border-bottom:3px solid #BBB;
+    padding:0px;
+    margin:15px;
+    overflow:hidden;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+img {
+    width:20%; /* you can use % */
+    height: auto;
+    float: right;
+    margin: 2%;
+    margin-top:2%;
+    border-radius: 10px;
+}
+
+#sampleArea {
+	width: 40%;
+}
