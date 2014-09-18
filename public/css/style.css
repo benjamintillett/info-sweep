@@ -1,5 +1,5 @@
 article {
-    background:#FFF;
+    background:#4C688B;
     border:1px solid #AAA;
     border-bottom:3px solid #BBB;
     padding:0px;
@@ -7,10 +7,37 @@ article {
     overflow:hidden;
     border-radius: 10px;
     font-size: 20px;
+    display: inline-block;
+    width: 27%;
+	min-width: 300px;
+	height: 150px;
+}
+
+a {
+	font-family: 'Rock Salt', cursive;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
+
+strong {
+	font-family: 'Rambla', sans-serif;
+	display: block;
+	color: #BCBFC3;
+}
+
+h3 {
+	display: inline;
+	margin: 2%;
+}
+
+.statistics {
+	margin: 2%;
 }
 
 img {
     width:20%; /* you can use % */
+    min-width: 80px;
     height: auto;
     float: right;
     margin: 2%;
@@ -19,5 +46,5 @@ img {
 }
 
 #sampleArea {
-	width: 40%;
+
 }

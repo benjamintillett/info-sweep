@@ -6,7 +6,7 @@ function User(name) {
 	this.name = name;
 }
 
-User.prototype.addGitHubUsername = function(username) {
+User.prototype.addGitHubUsername = function(username,callback) {
 	this.gitHubUsername = username;
 	this.gitHubUrl 	= "https://api.github.com/users/" + username + "?access_token="+ GITHUB_TOKEN;
 	return this.getGitHubData(this)
